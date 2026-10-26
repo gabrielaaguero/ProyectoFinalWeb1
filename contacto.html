@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herreria Tynucho</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header class="encabezado-sitio">
+<nav class="barra-navegacion" aria aria-label="Menu principal">
+<span class="logo">Herreria Tynucho</span>
+<ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="productos.html">Informacion de los trabajos</a></li>
+    <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<main>
+ <h1 class="titulo-pagina"> Pedi tu presupuesto</h1>
+ <p class="introduccion">Contanos que necesitas y te respondemos al instante</p>
+
+ <form id="formulario-contacto" class="formulario" novalidate>
+   <div class="campo">
+   <label for="nombre">Nombre:</label>
+   <input type="text" id="nombre" name="nombre">
+   <span class="mensaje-error" id="error-nombre" aria-live="polite"></span>
+</div>
+
+ <div class="campo">
+   <label for="ape">Apellido:</label>
+   <input type="text" id="apellido" name="apellido">
+   <span class="mensaje-error" id="error-apellido" aria-live="polite"></span>
+</div>
+
+<div class="campo">
+ <label for="email">Correo electronico:</label>
+ <input type="email" id="email" name="correo.E">
+ <span class="mensaje-error" id="error-email" aria-live="polite"></span>
+</div>
+
+<div class="campo">
+ <label for="tel">Telefono:</label>
+ <input type="tel" id="tel" name="telefono">
+ <span class="mensaje-error" id="error-tel" aria-live="polite"></span>
+</div>
+
+<div class="campo">
+ <label for="mensaje">Asunto:</label>
+ <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+ <span class="mensaje-error" id="error-mensaje" aria-live="polite"></span>
+</div>
+
+<input type="submit" value="Enviar Consulta">
+ </form>
+
+ <div id="zona-resumen" aria aria-live="polite"></div>
+</main>
+ <footer class="pie-sitio">
+    <p>Trabajo de hierro a medida</p>
+ </footer>
+
+<!-- falta link de java script-->
+</body>
+</html>
