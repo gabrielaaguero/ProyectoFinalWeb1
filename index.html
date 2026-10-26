@@ -4,58 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Principal;</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="contenidoCarrusel">
-        <div class="carrusel" id="carrusel1">
-            <div class="tarjetas" id="tarjeta1">
+    <nav>
+        <div class="logo"><img src="./imagenes/logo.jpg" height="100px" width="100px"></div>
+        <ul class="arriba">
+            <li>telefono</li>
+            <li>instagram</li>
+            <li>mensajes</li>
+        </ul>
 
-                <img src="./imagenes/logo.jpg" alt="logo">
-            </div>
-            <div class="flechas">
-                <a href="#carrusel3">
-                    <i>I</i>
-                </a>
-                <a href="#carrusel2">
-                    <i>D</i>
-                </a>
-            </div>
-        </div>
-
-        <div class="carrusel" id="carrusel2">
-            <div class="tarjetas" id="tarjeta2">
-                B
-                <img src="./imagenes/foto1.jpg" alt="">
-            </div>
-            <div class="flechas">
-
-                <a href="#carrusel1">
-                    <i>I</i>
-                </a>
-                <a href="#carrusel3">
-                    <i>D</i>
-                </a>
-            </div>
-        </div>
-
-        <div class="carrusel" id="carrusel3">
-            <div class="tarjetas" id="tarjeta3">
-                C
-                <img src="./imagenes/foto3.jpg" alt="">
-            </div>
-            <div class="flechas">
-                <a href="#carrusel2">
-                    <i>I</i>
-                </a>
-                <a href="#carrusel1">
-                    <i>D</i>
-                </a>
-            </div>
-        </div>
+    </nav>
+    <div class="carrusel">
+        <img id="imagen" width="600px" height="600px">
+        <button id="prev" onclick="imagenAnterior()">&#10094</button>
+        <button id="next" onclick="imagenSiguiente()">&#10095</button>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
