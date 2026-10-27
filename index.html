@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Herreria Tynucho</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><img src="./imagenes/logo.jpg" height="100px" width="100px"></div>
-        <ul class="arriba">
-            <li>telefono</li>
-            <li>instagram</li>
-            <li>mensajes</li>
-        </ul>
+    <header class="encabezado-sitio">
+        <nav class="barra-navegacion" aria-label="Menu principal">
+            <a href="index.html" class="logo"><img src="imagenes/logo.jpg" alt="logo de la herreria"></a>
+            <ul class="menu">
+                <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
+                <li><a href="productos.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </nav>
-    <div class="carrusel">
-        <img id="imagen" width="600px" height="600px">
-        <button id="prev" onclick="imagenAnterior()">&#10094</button>
-        <button id="next" onclick="imagenSiguiente()">&#10095</button>
-    </div>
-    <script src="./script.js"></script>
+    <main>
+        <section>
+            <h1 class="titulo-pagina">Herreria Tynucho</h1>
+            <p class="introduccion">Hacemos rejas,portones, techos,entre otras cosas. Y tambien hacemos trabajos de
+                electricidad.</p>
+        </section>
+        
+        <section>
+        <h2>Algunos de nuestros trabajos</h2>
+        <div class="carrusel">
+            <!--imagen incial del carrusel-->
+        <img id="imagen" src="imagenes/foto1.jpg" alt="escaleras">
+        <div class="carrusel-controles">
+            <button type="button" id="prev" class="boton" onclick="imagenAnterior()">&#10094</button>
+            <button type="button" id="next" class="boton" onclick="imagenSiguiente()">&#10095</button>
+        </div>
+        </div>
+        </section>
+    </main>
+        
+         <footer class="pie-sitio">
+            <p>Trabajo de hierro a medida</p>
+        </footer>
+
+        <script src="./script.js"></script>
 </body>
-
 </html>

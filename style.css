@@ -1,29 +1,106 @@
-* {
-    background-color: white;
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #e8eaec;
+  color: #262a2e;
 }
 
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    margin: auto;
+h1, h2 {
+  font-family: Georgia, serif;
 }
 
-.arriba {
-    display: flex;
-    list-style: none;
-    gap: 2rem
+/* Encabezado y menu */
+.encabezado-sitio {
+  background-color: #262a2e;
+  border-bottom: 4px solid #c2410c;
 }
 
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.menu a:hover {
+  color: #f59e0b;
+}
+
+.menu a.activo {
+  border-bottom: 3px solid #f59e0b;
+}
+
+/* Contenido */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Carrusel */
 .carrusel {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    flex-shrink: 0;
-    object-fit: cover;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
+.carrusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carrusel-controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.boton {
+  font-size: 1rem;
+  padding: 10px 25px;
+  background-color: #c2410c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #9a3412;
+}
+
+/* Pie de pagina */
+.pie-sitio {
+  background-color: #262a2e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .barra-navegacion {
+    justify-content: center;
+  }
 }
