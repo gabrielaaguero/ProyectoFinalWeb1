@@ -4,6 +4,9 @@ body {
   background-color: #e8eaec;
   color: #262a2e;
 }
+h1 {
+  font-family: Georgia, serif;
+}
 .encabezado-sitio {
   background-color: #262a2e;
   border-bottom: 4px solid #c2410c;
