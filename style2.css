@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #e8eaec;
+  color: #262a2e;
+}
+.encabezado-sitio {
+  background-color: #262a2e;
+  border-bottom: 4px solid #c2410c;
+}
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.menu a:hover {
+  color: #f59e0b;
+}
+
+.menu a.activo {
+  border-bottom: 3px solid #f59e0b;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.boton {
+    font-size: 1rem;
+    padding: 10px 25px;
+    background-color: #c2410c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.boton:hover {
+   background-color: #9a3412;
+}
+.pie-sitio {
+    background-color: #262a2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Celulares */
+@media (max-width: 600px) {
+  .barra-navegacion {
+    justify-content: center;
+  }
+}
+.formulario {
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-top: 5px solid #c2410c;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.campo input, .campo textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px;
+    border: 2px solid #6b747c;
+}
+.campo .invalido {
+    border-color: #b91c1c;
+}
+.mensaje-error {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+.resumen {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #262a2e;
+    color: white;
+}
+resumen h2 {
+    margin-top: 0;
+    color: #f59e0b;
+}
+resumen dt {
+    font-weight: bold;
+}
+resumen dd {
+    margin: 0 0 10px;
+}
