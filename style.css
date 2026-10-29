@@ -5,7 +5,8 @@ body {
   color: #262a2e;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Georgia, serif;
 }
 
@@ -66,8 +67,10 @@ main {
 
 .carrusel img {
   width: 100%;
-  height: auto;
   display: block;
+  height: 650px;
+  width: 650px;
+  border-radius: 10px;
 }
 
 .carrusel-controles {
@@ -79,7 +82,7 @@ main {
 
 .boton {
   font-size: 1rem;
-  padding: 10px 25px;
+  padding: 10px 15px;
   background-color: #c2410c;
   color: white;
   border: none;
