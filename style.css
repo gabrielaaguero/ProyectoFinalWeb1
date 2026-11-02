@@ -5,8 +5,7 @@ body {
   color: #262a2e;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: Georgia, serif;
 }
 
@@ -99,6 +98,12 @@ main {
   color: white;
   text-align: center;
   padding: 15px;
+}
+.pie-sitio a {
+  color: #f59e0b;
+}
+.pie-sitio a:hover {
+  color: white;
 }
 
 /* Celulares */

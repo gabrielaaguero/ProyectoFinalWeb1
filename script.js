@@ -33,8 +33,3 @@ function imagenAnterior() {
   mostrarImagen();
 }
 mostrarImagen();
-
-
-
-
-// Formulario de la pagina contacto
