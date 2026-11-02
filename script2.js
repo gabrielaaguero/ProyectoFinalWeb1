@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorEmail = document.getElementById('error-email');
         const errorTel = document.getElementById('error-tel');
         const errorMensaje = document.getElementById('error-mensaje');
-
+        const zonaResumen = document.getElementById('zona-resumen');
 
         errorNombre.textContent = '';
         errorApellido.textContent = '';
         errorEmail.textContent = '';
         errorTel.textContent = '';
         errorMensaje.textContent = '';
-
+        zonaResumen.innerHTML = '';
     
         const nombre = inputNombre.value.trim();
         const apellido = inputApellido.value.trim();
@@ -55,9 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (apellido === '') {
             errorApellido.textContent = 'El campo apellido es obligatorio.';
             formValido = false;
+        } else if (apellido.length < 3) {
+            errorNombre.textContent = 'El apellido debe tener al menos 3 caracteres.';
+            formValido = false;
         }
 
-        
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === '') {
             errorEmail.textContent = 'El correo electrónico es obligatorio.';
@@ -85,22 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
             errorMensaje.textContent = 'El mensaje debe tener al menos 5 caracteres.';
             formValido = false;
         }
-
-
-        if (formValido) {
-            const zonaResumen = document.getElementById('zona-resumen');
-            zonaResumen.innerHTML = '';
-
-           
-            const divResumen = document.createElement('div');
+           if (formValido) {
+           const divResumen = document.createElement('div');
             divResumen.className = 'caja-resumen';
-            divResumen.style.marginTop = '20px';
-            divResumen.style.padding = '15px';
-            divResumen.style.border = '1px solid #ccc';
-            divResumen.style.backgroundColor = '#f9f9f9';
 
-            const titulo = document.createElement('h3');
-            titulo.textContent = '¡Consulta enviada con éxito! Resumen de tus datos:';
+           const titulo = document.createElement('h3');
+            titulo.textContent = '¡Consulta enviada con éxito!';
 
             const pNombre = document.createElement('p');
             pNombre.textContent = `Nombre y Apellido: ${nombre} ${apellido}`;

@@ -65,6 +65,13 @@ main {
     text-align: center;
     padding: 15px;
 }
+.pie-sitio a {
+  color: #f59e0b;
+}
+.pie-sitio a:hover {
+  color: white;
+}
+
 /* Celulares */
 @media (max-width: 600px) {
   .barra-navegacion {
@@ -107,6 +114,13 @@ main {
     background-color: #262a2e;
     color: white;
 }
+.caja-resumen {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
 resumen h2 {
     margin-top: 0;
     color: #f59e0b;
